@@ -91,5 +91,10 @@ namespace WindowsFormsApp3
             //修改
             int bbb = repository.Update<Student>(new Student() { Name = "dddd", Age = 180 }, item => item.Age == 1, new string[] { Repository.GetMemberName(() => new Student().Name), Repository.GetMemberName(() => new Student().Age) });
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
